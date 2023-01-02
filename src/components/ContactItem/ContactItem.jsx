@@ -21,7 +21,7 @@ const ContactItem = ({ id, name, number }) => {
         <button
           className={css.contact__btn}
           type="button"
-          onClick={() => dispatch(deleteContact(parseInt(id)))}
+          onClick={() => dispatch(deleteContact(id))}
           >
           Delete
         </button>

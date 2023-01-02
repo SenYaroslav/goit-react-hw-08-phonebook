@@ -22,7 +22,7 @@ const ContactList = () => {
   return (
     <>
       <div>
-        {isLoading && <p>Loading contscts...</p>}
+        {isLoading && <p>Loading contacts...</p>}
         {error && <p>{error}</p>}
       </div>
       {getVisibleContacts && (
