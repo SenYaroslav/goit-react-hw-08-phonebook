@@ -22,7 +22,7 @@ const ContactItem = ({ id, name, number }) => {
           className={css.contact__btn}
           type="button"
           onClick={() => dispatch(deleteContact(id))}
-          >
+        >
           Delete
         </button>
       </span>

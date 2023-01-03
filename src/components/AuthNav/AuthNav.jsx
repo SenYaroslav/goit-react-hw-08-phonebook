@@ -1,4 +1,3 @@
-// import { NavLink } from 'react-router-dom';
 import Nav from 'react-bootstrap/Nav';
 
 export const AuthNav = () => {
@@ -14,22 +13,14 @@ export const AuthNav = () => {
       >
         <li>
           <Nav.Item>
-            <Nav.Link
-              href="/goit-react-hw-08-phonebook/register"
-              // eventKey="link-1"
-            >
+            <Nav.Link href="/goit-react-hw-08-phonebook/register">
               Register
             </Nav.Link>
           </Nav.Item>
         </li>
         <li>
           <Nav.Item>
-            <Nav.Link
-              href="/goit-react-hw-08-phonebook/login"
-              // eventKey="link-1"
-            >
-              Log In
-            </Nav.Link>
+            <Nav.Link href="/goit-react-hw-08-phonebook/login">Log In</Nav.Link>
           </Nav.Item>
         </li>
       </ul>

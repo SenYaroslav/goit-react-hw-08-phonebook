@@ -56,7 +56,6 @@ export const authRefresh = createAsyncThunk(
   'users/current',
   async (_, { rejectWithValue, getState }) => {
     let tokenLS = getState().auth.token;
-    console.log('tokenLS >>', tokenLS)
     if (!tokenLS) {
       return rejectWithValue();
     }
@@ -66,7 +65,7 @@ export const authRefresh = createAsyncThunk(
       return data;
     } catch (e) {
       tokenLS = null;
-      alert('Time is out, please log in again.')
+      alert('Time is out, please log in again.');
       rejectWithValue(e);
     }
   }
