@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import css from './ContactForm.module.css';
 import { useDispatch, useSelector } from 'react-redux';
-import { addContact } from 'redux/operations';
-import { contacts } from 'redux/selectors';
+import { addContact } from 'redux/contacts/operations';
+import { contacts } from 'redux/contacts/selectors';
 import { BsPersonPlusFill } from 'react-icons/bs';
 
 const ContactForm = () => {

@@ -55,7 +55,7 @@ export const logout = createAsyncThunk(
 export const authRefresh = createAsyncThunk(
   'users/current',
   async (_, { rejectWithValue, getState }) => {
-    const tokenLS = getState().auth.token;
+    let tokenLS = getState().auth.token;
     console.log('tokenLS >>', tokenLS)
     if (!tokenLS) {
       return rejectWithValue();
@@ -65,6 +65,8 @@ export const authRefresh = createAsyncThunk(
       const { data } = await axios.get('users/current');
       return data;
     } catch (e) {
+      tokenLS = null;
+      alert('Time is out, please log in again.')
       rejectWithValue(e);
     }
   }

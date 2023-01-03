@@ -22,7 +22,7 @@ function LogIn() {
   const handleSubmit = e => {
     e.preventDefault();
 
-    dispatch(login({ email: email, password: password }));
+    dispatch(login({ email, password }));
 
     reset();
   };

@@ -25,7 +25,7 @@ function Register() {
   const handleSubmit = e => {
     e.preventDefault();
 
-    dispatch(userSingup({ name: name, email: email, password: password }));
+    dispatch(userSingup({ name, email, password }));
 
     reset();
   };

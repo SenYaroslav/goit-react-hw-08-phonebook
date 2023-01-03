@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux';
 import ContactForm from 'components/ContactForm/ContactForm';
 import Filter from 'components/Filter/Filter';
 import ContactList from 'components/ContactList/ContactList';
-import { fetchAll } from 'redux/operations';
+import { fetchAll } from 'redux/contacts/operations';
 
 const Contacts = () => {
   const dispatch = useDispatch();
