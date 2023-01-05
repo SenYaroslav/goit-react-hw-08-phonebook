@@ -9,25 +9,10 @@ export const UserMenu = () => {
   const user = useSelector(selectUser);
 
   return (
-    <div
-      className={css.wrapper}
-      style={{
-        display: 'flex',
-        alignItems: 'baseline',
-        gap: '12px',
-        color: '#0D6EeD',
-      }}
-    >
-      <p>{user.email}</p>
-      <button
-        style={{
-          background: 'none',
-          border: 'none',
-        }}
-        type="button"
-        onClick={() => dispatch(logout())}
-      >
-        <TbLogout size="2em" color="#0D6EeD" />
+    <div className={css.wrapper}>
+      <p className={css.user__email}>{user.email}</p>
+      <button className={css.logout__btn} type="button" onClick={() => dispatch(logout())}>
+        <TbLogout size="2em" color="#a7bcf5" />
       </button>
     </div>
   );

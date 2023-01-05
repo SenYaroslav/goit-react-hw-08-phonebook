@@ -5,6 +5,7 @@ export const AppBar = () => {
     <header
       style={{
         margin: '0 auto',
+        padding: '0 10px'
       }}
     >
       <Navigation />

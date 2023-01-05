@@ -1,0 +1,17 @@
+.authNav__list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 9px; 
+  list-style: none;
+  gap: 5px;
+}
+
+.authNav__link {
+  padding: 10px;
+  text-decoration: none;
+  color: currentColor;
+  border: 1px solid #666666;
+  border-radius: 7px;
+  border-bottom: none;
+}

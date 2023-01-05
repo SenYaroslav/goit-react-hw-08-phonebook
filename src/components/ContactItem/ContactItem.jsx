@@ -12,7 +12,7 @@ const ContactItem = ({ id, name, number }) => {
     <li className={css.contact__item} id={id}>
       <p className={css.contact__name}>
         <BsFileEarmarkPerson
-          style={{ verticalAlign: 'bottom', marginRight: '10px' }}
+          style={{ verticalAlign: 'baseline', marginRight: '10px' }}
         />
         {name}
       </p>

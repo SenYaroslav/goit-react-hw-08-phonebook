@@ -1,10 +1,10 @@
 .contact__item {
   border-bottom: 1px solid rgb(70, 70, 70);
-  width: 600px;
 }
 
 .contact__name {
-  width: 600px;
+  margin-top: 20px;
+  margin-bottom: 5px;
   font-size: 22px;
   font-weight: 600;
 }
@@ -20,6 +20,7 @@
   min-width: 80px;
   padding: 10px;
   border: 1px outset rgb(70, 70, 70);
+  border-bottom: none;
   border-radius: 5px;
 
   text-transform: uppercase;
@@ -30,7 +31,7 @@
 
 .contact__btn:hover {
   cursor: pointer;
-  background-color: #bebebe;
+  background-color: #d6e1ff;
   color: #000;
 }
 

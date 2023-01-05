@@ -1,27 +1,15 @@
-import Nav from 'react-bootstrap/Nav';
+import { NavLink } from 'react-router-dom';
+import css from './AuthNav.module.css';
 
 export const AuthNav = () => {
   return (
     <div>
-      <ul
-        style={{
-          display: 'flex',
-          padding: '0',
-          margin: '0',
-          listStyle: 'none',
-        }}
-      >
+      <ul className={css.authNav__list} >
         <li>
-          <Nav.Item>
-            <Nav.Link href="/goit-react-hw-08-phonebook/register">
-              Register
-            </Nav.Link>
-          </Nav.Item>
+          <NavLink className={css.authNav__link} to="/register">Register</NavLink>
         </li>
         <li>
-          <Nav.Item>
-            <Nav.Link href="/goit-react-hw-08-phonebook/login">Log In</Nav.Link>
-          </Nav.Item>
+          <NavLink className={css.authNav__link} to="/login">Log In</NavLink>
         </li>
       </ul>
     </div>

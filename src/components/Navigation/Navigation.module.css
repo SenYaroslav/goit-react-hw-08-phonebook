@@ -1,0 +1,24 @@
+.navigation {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  min-height: 70px;
+  margin: 0 auto;
+  border-bottom: 1px solid #666666;
+}
+
+.navigation__wrapper {
+  display: flex;
+  gap: 5px;
+}
+
+.navigation__link {
+  padding: 9px;
+  text-decoration: none;
+  color: currentColor;
+  border: 1px solid #666666;
+  border-radius: 7px;
+  border-bottom: none;
+}
